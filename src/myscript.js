@@ -22,8 +22,9 @@ toggleMenu.addEventListener("click", () => {
 
 
     tog1.forEach((i => {
-        i.classList.toggle("toggle-bar-active");
         i.classList.toggle("bg-black");
+        i.classList.toggle("toggle-bar-active");
+
     }));
 
     mobMenu.classList.toggle("max-h-0");
