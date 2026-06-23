@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import "tailwindcss";
@@ -10,6 +9,20 @@
 
 @theme {
   --font-custom: "Inter", sans-serif;
-  
+
 }
 
+
+@layer components {
+  .toggle-bar-active:nth-child(1) {
+    background: red;
+    transform: rotate(45deg) translate(4px, 1px);
+  }
+
+  .toggle-bar-active:nth-child(2) {
+    background: red;
+    transform: rotate(-45deg) translate(4px, -1px);
+  }
+
+
+}
