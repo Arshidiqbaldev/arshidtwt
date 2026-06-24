@@ -44,12 +44,12 @@
 @layer components {
   .toggle-bar-active:nth-child(1) {
     background: red;
-    transform: rotate(45deg) translate(2.5px, 2.8px);
+    transform: rotate(45deg) translate(2.5px, 3px);
   }
 
   .toggle-bar-active:nth-child(2) {
     background: red;
-    transform: rotate(-45deg) translate(2.5px, -2.8px);
+    transform: rotate(-45deg) translate(2.5px, -3px);
   }
 
 
