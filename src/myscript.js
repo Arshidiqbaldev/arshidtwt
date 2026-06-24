@@ -2,7 +2,7 @@ const mobMenu = document.getElementById("mob");
 
 const menuIcon = document.getElementById("menu");
 
-
+const list = document.querySelectorAll(".ul .li");
 
 
 
@@ -28,5 +28,16 @@ toggleMenu.addEventListener("click", () => {
     }));
 
     mobMenu.classList.toggle("max-h-0");
-    mobMenu.classList.toggle("max-h-50");
-})
+    mobMenu.classList.toggle(`max-h-96`);
+    list.forEach((l, index) => {
+        l.style.animationDelay = `${index * 200}ms`;
+        l.classList.toggle("animate-fadeIn");
+    })
+});
+
+
+
+// animate
+
+
+

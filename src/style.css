@@ -9,7 +9,24 @@
 
 @theme {
   --font-custom: "Inter", sans-serif;
+  --animate-fadeIn: fadeIn 1s ease both;
 
+  @keyframes fadeIn {
+
+    0% {
+      transform: translateX(40px) ;
+      opacity: 0;
+
+    }
+
+    100% {
+      transform: translateX(0) ;
+      opacity:1
+
+    }
+
+
+  }
 }
 
 
