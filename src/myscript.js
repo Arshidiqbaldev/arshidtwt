@@ -37,7 +37,3 @@ toggleMenu.addEventListener("click", () => {
 
 
 
-// animate
-
-
-

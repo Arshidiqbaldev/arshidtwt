@@ -9,9 +9,11 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                menu: 'menupage.html'
-            }
-        }
-    }
-})
+                menu: 'menupage.html',
+                future: "future.html"
+
+            },
+        },
+    },
+});
 
