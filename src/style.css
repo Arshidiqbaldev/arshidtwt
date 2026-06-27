@@ -63,14 +63,16 @@
 
 
   .tog-ac:nth-child(1) {
-    background: red;
     transform: rotate(45deg) translate(2.5px, 4px);
   }
 
   .tog-ac:nth-child(2) {
-    background: red;
     transform: rotate(-45deg) translate(2.5px, -4px);
   }
 
+
+  .bg-ac{
+    @apply bg-primary;
+  }
 
 }
