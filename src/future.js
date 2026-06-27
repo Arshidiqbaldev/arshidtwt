@@ -1,4 +1,6 @@
-// animate
+import './style.css'
+
+
 
 
 

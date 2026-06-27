@@ -1,3 +1,6 @@
+import './style.css'
+
+
 const mobMenu = document.getElementById("mob");
 
 const menuIcon = document.getElementById("menu");
