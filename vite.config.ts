@@ -10,7 +10,7 @@ export default defineConfig({
             input: {
                 main: 'index.html',
                 menu: 'menupage.html',
-                future: "future.html"
+                future: "future.html",
 
             },
         },
