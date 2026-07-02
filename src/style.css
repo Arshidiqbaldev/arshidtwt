@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -19,6 +20,7 @@
 @theme {
   --font-custom: "Inter", sans-serif;
   --font-custom-2: "Space Mono", monospace;
+  --font-custom-3: "Elms Sans", sans-serif;
   --animate-fadeIn: fadeIn 1s ease both;
 
   @keyframes fadeIn {
@@ -49,6 +51,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@utility blur-bg-1 {
+  -webkit-backdrop-filter: blur(5px) saturate(10%);
+}
+
 
 @layer components {
   .toggle-bar-active:nth-child(1) {
@@ -71,8 +77,10 @@
   }
 
 
-  .bg-ac{
+  .bg-ac {
     @apply bg-primary;
   }
 
-};
+}
+
+;
