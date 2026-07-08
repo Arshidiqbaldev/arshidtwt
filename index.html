@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+</head>
+
+<body
+  class="relative bg-base-100 text-base-content text-base  tracking-tight font-[Utara] transition-all duration-500 ease-in ">
+
+
+
+
+
+  <main
+    class="w-full flex flex-col sm:flex-row  gap-3 p-3 min-h-screen  items-stretch justify-between  overflow-x-hidden">
+
+    <div class="flex flex-col justify-between left gap-5  w-full lg:w-[25%]  relative">
+
+
+      <div class="w-full flex flex-col gap-2  h-auto relative">
+
+        <div class="column-1 flex justify-between gap-2 p-2 w-full bg-base-300 items-center rounded-full relative">
+
+
+          <a href="" class="btn py-3 px-4 btn-primary rounded-full capitalize h-full">Get Started</a>
+
+          <div id="menu-toggle"
+            class="flex flex-col menu-toggle w-10 gap-2 h-full items-center justify-center *:transition-all *:duration-500 *:ease-in  cursor-pointer">
+            <span class="toggle-line bg-base-content h-0.5 w-full rounded-full"></span>
+            <span class="toggle-line bg-base-content h-0.5 w-full rounded-full"></span>
+          </div>
+
+        </div>
+
+        <div id="column-2"
+          class="column-2  overflow-hidden max-h-0 flex flex-col gap-2 bg-base-300 rounded-2xl transition-all duration-500 ease-linear w-full">
+
+          <div class="flex flex-col gap-2 p-2 justify-between">
+
+            <div class="flex gap-2 justify-between">
+
+              <nav class="block ">
+                <ul
+                  class=" ulist flex flex-col  *:block *:px-4 *:py-3 gap-2 *:rounded-full *:hover:bg-primary *:hover:text-base-100 *:transition-all *:duration-500 *:ease-in *:cursor-pointer">
+                  <li class="li"><a href="">Home</a></li>
+                  <li class="li"><a href="">About</a></li>
+                  <li class="li"><a href="">Contact</a></li>
+                  <li class="li"><a href="">News</a></li>
+                  <li class="li"><a href="">Account</a></li>
+
+                </ul>
+              </nav>
+
+              <div class="toggle-theme-div px-4 py-3 flex flex-col gap-2">
+                <span class="badge">theme</span>
+
+                <fieldset class="fieldset">
+                  <label class="flex gap-2 cursor-pointer items-center">
+                    <input type="radio" name="theme-radios" class="radio radio-sm theme-controller" value="default" />
+                    Default
+                  </label>
+                  <label class="flex gap-2 cursor-pointer items-center">
+                    <input type="radio" name="theme-radios" class="radio radio-sm theme-controller" value="retro" />
+                    Retro
+                  </label>
+                  <label class="flex gap-2 cursor-pointer items-center">
+                    <input type="radio" name="theme-radios" class="radio radio-sm theme-controller" value="cyberpunk" />
+                    Cyberpunk
+                  </label>
+                  <label class="flex gap-2 cursor-pointer items-center">
+                    <input type="radio" name="theme-radios" class="radio radio-sm theme-controller" value="valentine" />
+                    Valentine
+                  </label>
+                  <label class="flex gap-2 cursor-pointer items-center">
+                    <input type="radio" name="theme-radios" class="radio radio-sm theme-controller" value="aqua" />
+                    Aqua
+                  </label>
+                </fieldset>
+
+
+
+              </div>
+
+            </div>
+
+
+            <div
+              class="flex lg:hidden self-start  gap-2 p-2 bg-base-300 border border-base-content/20 rounded-full *:w-8 *:text-base-content/80 *:cursor-pointer *:hover:text-primary *:transition-all *:duration-500 ease-in ">
+
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                  <circle cx="9.549" cy="19.049" r="1.701" />
+                  <circle cx="16.96" cy="19.049" r="1.701" />
+                  <path
+                    d="m5.606 5.555l2.01 6.364c.309.978.463 1.467.76 1.829c.26.32.599.567.982.72c.435.173.947.173 1.973.173h3.855c1.026 0 1.538 0 1.972-.173c.384-.153.722-.4.983-.72c.296-.362.45-.851.76-1.829l.409-1.296l.24-.766l.331-1.05a2.5 2.5 0 0 0-2.384-3.252zm0 0l-.011-.037a7 7 0 0 0-.14-.42a2.92 2.92 0 0 0-2.512-1.84C2.84 3.25 2.727 3.25 2.5 3.25" />
+                </g>
+              </svg>
+
+
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 13.826a3.506 3.506 0 1 0 0-7.013a3.506 3.506 0 0 0 0 7.013m0 0a6 6 0 0 1 5.953 5.254M12 13.826a6 6 0 0 0-5.953 5.254m0 0A9.2 9.2 0 0 0 12 21.25a9.2 9.2 0 0 0 5.953-2.17m-11.906 0a9.25 9.25 0 1 1 11.907 0" />
+              </svg>
+
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="hero w-full flex flex-col gap-10 transition-all duration-500 ease-in">
+        <h1 class="text-4xl md:text-8xl font-[Utara] capitalize w-full">
+          Meet your future here.
+        </h1>
+
+        <p class="desc font-custom  ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi totam eaque soluta
+          accusamus, corrupti fuga perspiciatis voluptatem. Tenetur velit reprehenderit tempora vel maxime
+          expedita ducimus corporis aut ex veniam.
+        </p>
+      </div>
+
+
+      <div class="lg:flex flex-col hidden gap-5">
+
+
+        <p class="desc font-custom text-xl ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi totam eaque soluta
+          accusamus, corrupti fuga perspiciatis voluptatem. Tenetur velit reprehenderit tempora vel maxime
+          expedita ducimus corporis aut ex veniam.
+
+        </p>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="center bg-[url(/bg.svg)] bg-center bg-contain  bg-no-repeat w-full lg:w-[35%] grow min-h-[70vh] opacity-85">
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="flex flex-col justify-between right gap-5 w-full lg:w-[25%] ">
+
+
+      <div class="w-full hidden lg:flex  gap-2 p-2 h-auto bg-base-300 items-center justify-between rounded-full ">
+
+        <nav class="block ">
+          <ul
+            class="ulist flex *:block *:px-4 *:py-3 gap-2 *:rounded-full *:hover:bg-primary *:hover:text-base-100 *:transition-all *:duration-500 *:ease-in *:cursor-pointer">
+            <li class="li"><a href="">Contact</a></li>
+            <li class="li"><a href="">Privacy policy</a></li>
+
+
+          </ul>
+        </nav>
+
+        <div
+          class="flex gap-2 p-2 bg-base-300 border border-base-content/20 rounded-full *:w-8 *:text-base-content/80 *:cursor-pointer *:hover:text-primary *:transition-all *:duration-500 ease-in ">
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+              <circle cx="9.549" cy="19.049" r="1.701" />
+              <circle cx="16.96" cy="19.049" r="1.701" />
+              <path
+                d="m5.606 5.555l2.01 6.364c.309.978.463 1.467.76 1.829c.26.32.599.567.982.72c.435.173.947.173 1.973.173h3.855c1.026 0 1.538 0 1.972-.173c.384-.153.722-.4.983-.72c.296-.362.45-.851.76-1.829l.409-1.296l.24-.766l.331-1.05a2.5 2.5 0 0 0-2.384-3.252zm0 0l-.011-.037a7 7 0 0 0-.14-.42a2.92 2.92 0 0 0-2.512-1.84C2.84 3.25 2.727 3.25 2.5 3.25" />
+            </g>
+          </svg>
+
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 13.826a3.506 3.506 0 1 0 0-7.013a3.506 3.506 0 0 0 0 7.013m0 0a6 6 0 0 1 5.953 5.254M12 13.826a6 6 0 0 0-5.953 5.254m0 0A9.2 9.2 0 0 0 12 21.25a9.2 9.2 0 0 0 5.953-2.17m-11.906 0a9.25 9.25 0 1 1 11.907 0" />
+          </svg>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="hero flex flex-col gap-5 w-full">
+        <h2 class="text-3xl font-[Utara] capitalize w-full">
+          Meet your future here.
+        </h2>
+
+        <p class="desc font-custom ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi totam eaque soluta
+          accusamus, corrupti fuga perspiciatis voluptatem. Tenetur velit reprehenderit tempora vel maxime
+          expedita ducimus corporis aut ex veniam.
+        </p>
+      </div>
+
+
+      <div class="flex justify-center gap-5 ">
+
+        <div
+          class="flex w-auto rounded-full  p-2 gap-5 *:w-8 *:text-base-content/80 *:cursor-pointer *:hover:text-primary *:transition-all *:duration-500 ease-in bg-base-300">
+
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M10.704 4.325a1.5 1.5 0 0 1 2.592 0l1.818 3.12a1.5 1.5 0 0 0 .978.712l3.53.764a1.5 1.5 0 0 1 .8 2.465l-2.405 2.693a1.5 1.5 0 0 0-.374 1.15l.363 3.593a1.5 1.5 0 0 1-2.097 1.524l-3.304-1.456a1.5 1.5 0 0 0-1.21 0l-3.304 1.456a1.5 1.5 0 0 1-2.097-1.524l.363-3.593a1.5 1.5 0 0 0-.373-1.15l-2.406-2.693a1.5 1.5 0 0 1 .8-2.465l3.53-.764a1.5 1.5 0 0 0 .979-.711z" />
+          </svg>
+
+
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+            <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
+              d="M2.75 8.623v7.379a4 4 0 0 0 4 4h10.5a4 4 0 0 0 4-4v-5.69a4 4 0 0 0-4-4H12M2.75 8.624V6.998a3 3 0 0 1 3-3h2.9a2.5 2.5 0 0 1 1.768.732L12 6.313m-9.25 2.31h5.904a2.5 2.5 0 0 0 1.768-.732L12 6.313" />
+          </svg>
+
+
+
+
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE -->
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M7.05 6.462a2 2 0 0 0 2.63-1.519l.32-1.72a9 9 0 0 1 3.998 0l.322 1.72a2 2 0 0 0 2.63 1.519l1.649-.58a9 9 0 0 1 2.001 3.46l-1.33 1.14a2 2 0 0 0 0 3.037l1.33 1.139a9 9 0 0 1-2.001 3.46l-1.65-.58a2 2 0 0 0-2.63 1.519L14 20.777a9 9 0 0 1-3.998 0l-.322-1.72a2 2 0 0 0-2.63-1.519l-1.649.58a9 9 0 0 1-2.001-3.46l1.33-1.14a2 2 0 0 0 0-3.036L3.4 9.342a9 9 0 0 1 2-3.46zM12 9a3 3 0 1 1 0 6a3 3 0 0 1 0-6"
+              clip-rule="evenodd" />
+          </svg>
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <script type="module" src="/src/main.js">
+  </script>
+  <script type="module" src="/src/future.js"></script>
+
+</body>
+
+</html>

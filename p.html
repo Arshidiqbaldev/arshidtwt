@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Navigation</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #000;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        /* Bigger clickable area */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 14px;
+        }
+    </style>
+</head>
+
+<body class="p-10">
+
+    <div class="flex gap-24 w-full">
+
+        <!-- Navigation -->
+        <nav class="flex flex-col gap-2 w-72 sticky top-10 self-start">
+
+            <a href="#apple-hello-effect" class="nav-link group relative flex h-px items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300 ease-out
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Apple Hello Effect
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="#code-block-command" class="nav-link group relative flex h-px items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Code Block Command
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="#copy-button" class="nav-link group relative flex h-px items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Copy Button
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="#dot-grid-spotlight" class="nav-link group relative flex h-px items-center gap-3">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Dot Grid Spotlight
+                </span>
+
+            </a>
+
+            <span class="block h-px w-6 bg-white/20"></span>
+            <span class="block h-px w-6 bg-white/20"></span>
+
+            <a href="#elastic-slider" class="nav-link group relative flex h-px items-center gap-3" aria-current="page">
+
+                <span class="nav-line block h-px w-6 shrink-0 bg-white/20 transition-all duration-300
+                    group-hover:w-12
+                    group-hover:bg-white
+                    group-aria-[current=page]:w-10
+                    group-aria-[current=page]:bg-white">
+                </span>
+
+                <span class="text-sm text-white/60 transition-colors duration-300
+                    group-hover:text-white
+                    group-aria-[current=page]:text-white">
+                    Elastic Slider
+                </span>
+
+            </a>
+
+        </nav>
+
+        <!-- Demo Sections -->
+        <main class="space-y-60 flex flex-col w-full">
+
+            <section id="apple-hello-effect" class="h-screen w-full flex">
+                <h1 class="text-5xl font-bold">Apple Hello Effect</h1>
+            </section>
+
+            <section id="code-block-command" class="h-screen">
+                <h1 class="text-5xl font-bold">Code Block Command</h1>
+            </section>
+
+            <section id="copy-button" class="h-screen">
+                <h1 class="text-5xl font-bold">Copy Button</h1>
+            </section>
+
+            <section id="dot-grid-spotlight" class="h-screen">
+                <h1 class="text-5xl font-bold">Dot Grid Spotlight</h1>
+            </section>
+
+            <section id="elastic-slider" class="h-screen">
+                <h1 class="text-5xl font-bold">Elastic Slider</h1>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script>
+        const links = document.querySelectorAll(".nav-link");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                // Remove active state
+                links.forEach(item => {
+                    item.removeAttribute("aria-current");
+                });
+
+                // Add active state
+                this.setAttribute("aria-current", "page");
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
