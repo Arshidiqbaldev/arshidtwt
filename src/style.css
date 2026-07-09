@@ -134,31 +134,61 @@
     animation: 100s linear infinite orbit-reverse
   }
 
-}
 
 
 
-@keyframes circle {
+  @keyframes circle {
 
-  0% {
-    transform: rotate(0);
+    0% {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+
   }
 
-  to {
-    transform: rotate(360deg);
+
+  @keyframes circle-reverse {
+
+    0% {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(0);
+    }
+
   }
 
-}
 
-
-@keyframes circle-reverse {
-
-  0% {
-    transform: rotate(360deg);
+  .animate-circle-slow {
+    animation: 50s linear infinite circle;
   }
 
-  to {
-    transform: rotate(0);
+  .animate-circle-content-slow {
+    animation: 50s linear infinite circle-reverse;
   }
+
+
+  .animate-circle-mid {
+    animation: 70s linear infinite circle;
+  }
+
+  .animate-circle-content-mid {
+    animation: 70s linear infinite circle-reverse;
+  }
+
+  .animate-circle-fast {
+    animation: 90s linear infinite circle;
+  }
+
+  .animate-circle-content-fast {
+    animation: 90s linear infinite circle-reverse;
+  }
+
+
+
 
 }
