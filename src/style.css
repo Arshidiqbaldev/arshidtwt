@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -20,12 +21,12 @@
 @theme {
   --font-custom: "Inter", sans-serif;
   --font-custom-2: "Space Mono", monospace;
-  --font-custom-3: "Elms Sans", sans-serif;
-<<<<<<< HEAD
-  --shadow-custom:0px 4px 1px 0px #ffffffac, 0px 4px 4px -1px #ffffffe0 inset;
-  --inset-shadow-custom-1:  0px 1.5px 1px -1px #00000010 inset;
-=======
->>>>>>> c5ad50a1c9f916aee832e9463a66dbd4db055806
+  --font-custom-3: "Geist", sans-serif;
+
+  --shadow-custom: 0px 4px 1px 0px #ffffffac, 0px 4px 4px -1px #ffffffe0 inset;
+  --inset-shadow-custom-1: 0px 1.5px 1px -1px #00000010 inset;
+
+
   --animate-fadeIn: fadeIn 1s ease both;
 
   @keyframes fadeIn {

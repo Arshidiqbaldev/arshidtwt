@@ -11,6 +11,8 @@ export default defineConfig({
                 main: 'index.html',
                 menu: 'menupage.html',
                 future: "future.html",
+                p: "p.html",
+                nav: "nav.html"
 
             },
         },
