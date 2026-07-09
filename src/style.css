@@ -87,6 +87,52 @@
     @apply bg-primary;
   }
 
+
+
+
+  @keyframes orbit {
+    0% {
+      transform: rotate(0)
+    }
+
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+  @keyframes orbit-reverse {
+    0% {
+      transform: rotate(360deg)
+    }
+
+    to {
+      transform: rotate(0)
+    }
+  }
+
+  .animate-orbit-slow {
+    animation: 60s linear infinite orbit
+  }
+
+  .animate-orbit-counter-slow {
+    animation: 60s linear infinite orbit-reverse
+  }
+
+  .animate-orbit-mid {
+    animation: 80s linear infinite orbit-reverse
+  }
+
+  .animate-orbit-counter-mid {
+    animation: 80s linear infinite orbit
+  }
+
+  .animate-orbit-fast {
+    animation: 100s linear infinite orbit
+  }
+
+  .animate-orbit-counter-fast {
+    animation: 100s linear infinite orbit-reverse
+  }
+
 }
 
-;
