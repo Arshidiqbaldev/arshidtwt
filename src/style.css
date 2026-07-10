@@ -173,11 +173,11 @@
 
 
   .animate-circle-mid {
-    animation: 70s linear infinite circle;
+    animation: 70s linear infinite circle-reverse;
   }
 
   .animate-circle-content-mid {
-    animation: 70s linear infinite circle-reverse;
+    animation: 70s linear infinite circle;
   }
 
   .animate-circle-fast {
